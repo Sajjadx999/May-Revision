@@ -1,5 +1,5 @@
 const newman = require('newman');
-//require('dotenv').config();
+require('dotenv').config();
  
 newman.run({
     collection:`https://api.postman.com/collections/38014443-aeef50d0-7781-42da-9f65-72aec96bd38d?access_key=${process.env.secretKey}`,
